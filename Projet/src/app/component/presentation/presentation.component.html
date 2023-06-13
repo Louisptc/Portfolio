@@ -1,0 +1,19 @@
+<div>
+    <div class="col-12 d-flex" id="top-container">
+        <div class="col-6 card-top">
+            <ul>
+                <li class="card-title" *ngFor="let data of details">{{data.title}} : {{data.description}}</li>
+            </ul>
+        </div>
+        <div class="col-6">
+        <img id="photo" src="./assets/images/louis.jpeg" alt="Photo de profil">
+        </div>
+    </div>
+    <div class="text">
+        <h2>{{text.title}}</h2>
+        <p class="col-11">{{text[currentLanguage].text}}</p>
+        <button class="col-1 button" (click)="toggleLanguage()">{{languageButton}}</button>
+    </div>
+</div>
+
+
