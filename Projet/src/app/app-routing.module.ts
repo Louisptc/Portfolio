@@ -6,6 +6,7 @@ import { ExperiencesComponent } from './component/experiences/experiences.compon
 import { Title } from '@angular/platform-browser';
 import { TitleComponent } from './component/title/title.component';
 import { CardComponent } from './component/card/card.component';
+import { ProjetsComponent } from './projets/projets.component';
 
 const routes: Routes = [
   {
@@ -20,6 +21,11 @@ const routes: Routes = [
     path: 'skils',
     component : CardComponent,
   },
+  {
+    path: 'projets',
+    component : ProjetsComponent,
+  },
+
   {
     path:'', redirectTo: 'presentation', pathMatch: 'full'
   },
